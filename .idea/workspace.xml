@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cb5e221-c554-43fa-ba31-42d00c7ef686" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+    <list default="true" id="1cb5e221-c554-43fa-ba31-42d00c7ef686" name="Default Changelist" comment="add donation request Component , fix unvalid route">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/donation-requests/donation-requests.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/donation-requests/donation-requests.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/donation-requests/donation-requests.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/donation-requests/donation-requests.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,13 +18,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1R9anjKd5GJq4ok2cmZU8gqM8Y3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.protractor.protractor_package" value="$PROJECT_DIR$/node_modules/protractor" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -42,6 +50,7 @@
   <component name="RunManager" selected="npm.build">
     <configuration name="Tests (exultHackathon)" type="JavaScriptTestRunnerKarma">
       <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <karma-package-dir value="$PROJECT_DIR$/node_modules/@angular/cli" />
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
@@ -49,6 +58,7 @@
     <configuration name="E2E Tests (exultHackathon)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/node_modules/protractor" />
       <protractor-options value="" />
       <envs />
       <scope-kind value="ALL" />
@@ -96,7 +106,7 @@
       <workItem from="1569081936184" duration="7321000" />
       <workItem from="1569089291493" duration="302000" />
       <workItem from="1569089759349" duration="310000" />
-      <workItem from="1569090760041" duration="203000" />
+      <workItem from="1569090760041" duration="2629000" />
     </task>
     <task id="LOCAL-00001" summary="add side bar">
       <created>1569082140138</created>
@@ -147,7 +157,28 @@
       <option name="project" value="LOCAL" />
       <updated>1569090787209</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add netlify.toml file">
+      <created>1569090979209</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1569090979209</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add donation request service and model ,,">
+      <created>1569092028547</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1569092028547</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add donation request Component , fix unvalid route">
+      <created>1569092288052</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1569092288052</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +198,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
       <path value="$PROJECT_DIR$" />
@@ -176,6 +208,9 @@
     <MESSAGE value="add side bar" />
     <MESSAGE value="add donater profile" />
     <MESSAGE value="Fix build path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix build path" />
+    <MESSAGE value="Add netlify.toml file" />
+    <MESSAGE value="add donation request service and model ,," />
+    <MESSAGE value="add donation request Component , fix unvalid route" />
+    <option name="LAST_COMMIT_MESSAGE" value="add donation request Component , fix unvalid route" />
   </component>
 </project>
