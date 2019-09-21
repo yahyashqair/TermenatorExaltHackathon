@@ -1,27 +1,69 @@
+<!--This should be a pop-up-->
 <div class="div">
-    <div class="form-row">
-        <div class="form-group col-md-4">
-            <label for="inputState">Blood Type</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>A</option>
-              <option>B</option>
-              <option>O</option>
-              <option>AB</option>
-            </select>
-        </div>
-        <div class="form-group col-md-4">
-            <label for="inputState">'+,-'</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>Any</option>
-              <option>Positive (+)</option>
-              <option>Negative (-)</option>
-            </select>
-        </div>
-        <div class="form-group col-md-4">
-            <label for="inputCity">Quantitiy</label>
-            <input type="text" class="form-control" id="quantitiy">
-          </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="bloodType">Blood Type</label>
+      <select id="bloodType" class="form-control">
+        <option selected>Choose...</option>
+        <option>A</option>
+        <option>B</option>
+        <option>O</option>
+        <option>AB</option>
+      </select>
     </div>
+    <div class="form-group col-md-4">
+      <label for="negativePositive">'+,-'</label>
+      <select id="negativePositive" class="form-control">
+        <option selected>Choose...</option>
+        <option>Any</option>
+        <option>Positive (+)</option>
+        <option>Negative (-)</option>
+      </select>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="quantity">Quantity</label>
+      <input type="number" class="form-control" id="quantity">
+    </div>
+  </div>
+
+  <div class="float-right">
+    <button class="btn btn-primary">Submit</button>
+    <button class="btn btn-danger">Cancel</button>
+  </div>
+
+  <div>
+    <table class="table table-striped">
+
+      <thead>
+      <tr>
+        <th>-</th>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Height</th>
+        <th scope="col">Weight</th>
+        <th scope="col">Blood Type</th>
+        <th scope="col">Last Time Donated</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td><label>
+          <input type="checkbox">
+        </label></td>
+        <th scope="row">id</th>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Gender</td>
+        <td>Gender</td>
+        <td>Gender</td>
+        <td>Gender</td>
+        <td>Gender</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
+
