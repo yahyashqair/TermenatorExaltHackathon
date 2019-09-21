@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cb5e221-c554-43fa-ba31-42d00c7ef686" name="Default Changelist" comment="add donater profile">
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+    <list default="true" id="1cb5e221-c554-43fa-ba31-42d00c7ef686" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +96,7 @@
       <workItem from="1569081936184" duration="7321000" />
       <workItem from="1569089291493" duration="302000" />
       <workItem from="1569089759349" duration="310000" />
-      <workItem from="1569090760041" duration="8000" />
+      <workItem from="1569090760041" duration="203000" />
     </task>
     <task id="LOCAL-00001" summary="add side bar">
       <created>1569082140138</created>
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569086818140</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fix build path">
+      <created>1569090787209</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569090787209</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +175,7 @@
     <MESSAGE value="add navbar" />
     <MESSAGE value="add side bar" />
     <MESSAGE value="add donater profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="add donater profile" />
+    <MESSAGE value="Fix build path" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix build path" />
   </component>
 </project>
