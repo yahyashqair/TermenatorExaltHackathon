@@ -1,3 +1,11 @@
 export interface DonaterModel {
-  hospital: number;
+  name: string;
+  DOB: Date;
+  gender: string;
+  address: string;
+  phone: string;
+  IDnumber: number;
+  id: number;
+  countOfDonations: number;
+  leastDonationTime: Date;
 }

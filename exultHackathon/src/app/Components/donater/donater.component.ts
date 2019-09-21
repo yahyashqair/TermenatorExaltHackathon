@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {DonaterModel} from '../../models/donater.model';
+import {DonaterService} from '../../Services/donater-service.service';
 
 @Component({
   selector: 'app-donater',
@@ -8,9 +9,13 @@ import {DonaterModel} from '../../models/donater.model';
 })
 export class DonaterComponent implements OnInit {
 
-  constructor() { }
-  donater:DonaterModel;
+  constructor(private donaterService: DonaterService) {
+  }
+
+  donater: DonaterModel;
+
   ngOnInit() {
+    //this.donater=this.donaterService.getDonater();
   }
 
 }
