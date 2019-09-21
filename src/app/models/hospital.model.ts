@@ -1,10 +1,10 @@
-export interface HospitalModel {
+export class HospitalModel {
   name: string;
   address: string;
   phoneNumber: string;
   types: Storage[];
 }
-export interface Storage {
+export class Storage {
   type: string;
   count: number;
 }

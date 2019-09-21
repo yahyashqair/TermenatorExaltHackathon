@@ -8,14 +8,20 @@ import {DonaterService} from '../../Services/donater-service.service';
   styleUrls: ['./donater.component.scss']
 })
 export class DonaterComponent implements OnInit {
+  donater: DonaterModel = new DonaterModel();
 
   constructor(private donaterService: DonaterService) {
+
   }
 
-  donater: DonaterModel;
 
   ngOnInit() {
-    //this.donater=this.donaterService.getDonater();
+    this.donaterService.donater
+      .subscribe(res => {
+        this.donater = res;
+        console.log(res + ' sent');
+      });
+    this.donaterService.getDonater();
   }
 
 }

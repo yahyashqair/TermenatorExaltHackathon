@@ -1,4 +1,4 @@
-export interface DonaterModel {
+export class DonaterModel {
   name: string;
   DOB: Date;
   gender: string;
