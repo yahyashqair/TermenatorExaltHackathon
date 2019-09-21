@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cb5e221-c554-43fa-ba31-42d00c7ef686" name="Default Changelist" comment="add donater profile" />
+    <list default="true" id="1cb5e221-c554-43fa-ba31-42d00c7ef686" name="Default Changelist" comment="add donater profile">
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +96,7 @@
       <workItem from="1569081936184" duration="7321000" />
       <workItem from="1569089291493" duration="302000" />
       <workItem from="1569089759349" duration="310000" />
+      <workItem from="1569090760041" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="add side bar">
       <created>1569082140138</created>
