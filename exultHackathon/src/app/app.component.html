@@ -1,6 +1,7 @@
 <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
   <h1 style="font-weight:normal">Left Sidebar</h1>
-  <button pButton type="button" (click)="visibleSidebar1 = false" label="Save" class="ui-button-success"></button>
-  <button pButton type="button" (click)="visibleSidebar1 = false" label="Cancel" class="ui-button-secondary"></button>
+  <button pButton type="button" [routerLink]="['/hospital']" (click)="visibleSidebar1 = false" label="Save" class="ui-button-success">hospital</button>
+  <button pButton type="button" [routerLink]="['/donater']" (click)="visibleSidebar1 = false" label="Cancel" class="ui-button-secondary">donater</button>
 </p-sidebar>
-<button pButton type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right"></button>
+<button pButton type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right">Menu</button>
+<router-outlet></router-outlet>
