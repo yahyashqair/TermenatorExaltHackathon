@@ -13,6 +13,7 @@ import {AccordionModule} from 'primeng/accordion';     //accordion and accordion
 import {MenuItem} from 'primeng/api';                 //api
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SidebarModule} from 'primeng/sidebar';
+import { DonationRequestsComponent } from './Components/donation-requests/donation-requests.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {SidebarModule} from 'primeng/sidebar';
     LoginComponent,
     SignupComponent,
     ProfileComponent,
-    RequestDonationComponent
+    RequestDonationComponent,
+    DonationRequestsComponent
   ],
   imports: [
     BrowserModule,
