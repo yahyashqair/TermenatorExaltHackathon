@@ -1,0 +1,28 @@
+<div>
+  <table class="table table-striped">
+
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Country</th>
+        <th scope="col">City</th>
+        <th scope="col">Area</th>
+        <th scope="col">Phone</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let h of hospitals; let i = index">
+        <th scope="row">{{i}}</th>
+        <td>{{h.name}}</td>
+        <td>{{h.email}}</td>
+        <td>{{h.country}}</td>
+        <td>{{h.city}}</td>
+        <td>{{h.area}}</td>
+        <td>{{h.phone}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

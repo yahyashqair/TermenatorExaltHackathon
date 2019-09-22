@@ -24,6 +24,11 @@ import { ContactUsComponent } from './Components/contact-us/contact-us.component
 import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { RequestsComponent } from './Components/donater/requests/requests.component';
 import { DonaterProfileComponent } from './Components/donater/donater-profile/donater-profile.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { DashboardHospitalsComponent } from './Components/dashboard/dashboard-hospitals/dashboard-hospitals.component';
+import { DashboardDonatersComponent } from './Components/dashboard/dashboard-donaters/dashboard-donaters.component';
+import { DashboardRequestsComponent } from './Components/dashboard/dashboard-requests/dashboard-requests.component';
+
 const firebaseConfig = {
   apiKey: "AIzaSyD5RcBoU4DLPma6u7d-LsGg3XPfhfCWOkI",
   authDomain: "termenatorexalthackathon.firebaseapp.com",
@@ -43,11 +48,14 @@ const firebaseConfig = {
     SignupComponent,
     ProfileComponent,
     RequestDonationComponent,
-    DonationRequestsComponent,
     ContactUsComponent,
     AboutUsComponent,
     RequestsComponent,
-    DonaterProfileComponent
+    DonaterProfileComponent,
+    DashboardComponent,
+    DashboardHospitalsComponent,
+    DashboardDonatersComponent,
+    DashboardRequestsComponent
   ],
   imports: [
     BrowserModule,
