@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { DonationRequestsService } from 'src/app/Services/donation-requests.service';
 import { RequestModel } from 'src/app/models/request.model';
 import { SelectItem } from 'primeng/api';
+import { DonaterModel } from 'src/app/models/donater.model';
+import { DonaterService } from 'src/app/Services/donater-service.service';
 
 @Component({
   selector: 'app-requests',
@@ -9,11 +11,13 @@ import { SelectItem } from 'primeng/api';
   styleUrls: ['./requests.component.scss']
 })
 export class RequestsComponent implements OnInit {
-  private requests: RequestModel[];
-  selectedRequest: RequestModel;
 
-  constructor(private requestService: DonationRequestsService) {
+  constructor(private requestService: DonationRequestsService, private donaterService: DonaterService) {
   }
+
+  private requests: RequestModel[];
+  private donater: DonaterModel;
+  selectedRequest: RequestModel;
 
   displayDialog: boolean;
 
@@ -27,8 +31,16 @@ export class RequestsComponent implements OnInit {
 
   ngOnInit() {
     this.requestService.getRequests().subscribe(data => {
-      this.requests = data;
+      const id = localStorage.getItem('donater');
+      this.donaterService.getDonater(Number(id)).subscribe(res => {
+        this.donater = res;
+      });
+      for (const e of data) {
+        if (e.bloodType === this.donater.bloodType) {
+          this.requests.push(e);
+        }
+      }
     });
-  }
 
+}
 }

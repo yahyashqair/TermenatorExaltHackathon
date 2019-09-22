@@ -5,7 +5,6 @@ import {DonaterComponent} from './Components/donater/donater.component';
 import {LoginComponent} from './Components/login/login.component';
 import {ProfileComponent} from './Components/hospital/profile/profile.component';
 import {RequestDonationComponent} from './Components/hospital/request-donation/request-donation.component';
-import {DonationRequestsComponent} from './Components/donation-requests/donation-requests.component';
 import {DonaterProfileComponent} from './Components/donater/donater-profile/donater-profile.component';
 import {RequestsComponent} from './Components/donater/requests/requests.component';
 import { SignupComponent } from './Components/signup/signup.component';
@@ -30,9 +29,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'signUp', component: SignupComponent},
   {path: 'contactUs', component: ContactUsComponent},
-  {path: 'aboutUs', component: AboutUsComponent},
-  {path: 'requests', component: DonationRequestsComponent}
-
+  {path: 'aboutUs', component: AboutUsComponent}
 ];
 
 @NgModule({

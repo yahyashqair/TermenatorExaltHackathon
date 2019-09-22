@@ -13,7 +13,6 @@ import {AccordionModule} from 'primeng/accordion';     //accordion and accordion
 import {MenuItem} from 'primeng/api';                 //api
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SidebarModule} from 'primeng/sidebar';
-import {DonationRequestsComponent} from './Components/donation-requests/donation-requests.component';
 import {DataViewModule} from 'primeng/dataview';
 import {DropdownModule} from 'primeng/dropdown';
 import {TabMenuModule} from 'primeng/tabmenu';
@@ -34,7 +33,6 @@ import { DonaterProfileComponent } from './Components/donater/donater-profile/do
     SignupComponent,
     ProfileComponent,
     RequestDonationComponent,
-    DonationRequestsComponent,
     ContactUsComponent,
     AboutUsComponent,
     RequestsComponent,
