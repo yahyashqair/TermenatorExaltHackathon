@@ -1,8 +1,11 @@
 export class DonaterModel {
   name: string;
+  email: string;
   DOB: Date;
   gender: string;
-  address: string;
+  country: string;
+  city: string;
+  area: string;
   phone: string;
   IDnumber: number;
   id: number;

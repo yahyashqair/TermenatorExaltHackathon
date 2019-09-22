@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cb5e221-c554-43fa-ba31-42d00c7ef686" name="Default Changelist" comment="add donation request Component , fix unvalid route">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/donater/donater.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/donater/donater.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Components/donater/donater.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/donater/donater.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/donater.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/donater.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/hospital.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/hospital.model.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +109,8 @@
       <workItem from="1569089291493" duration="302000" />
       <workItem from="1569089759349" duration="310000" />
       <workItem from="1569090760041" duration="4707000" />
-      <workItem from="1569138001579" duration="3131000" />
+      <workItem from="1569138001579" duration="5540000" />
+      <workItem from="1569145026422" duration="604000" />
     </task>
     <task id="LOCAL-00001" summary="add side bar">
       <created>1569082140138</created>
