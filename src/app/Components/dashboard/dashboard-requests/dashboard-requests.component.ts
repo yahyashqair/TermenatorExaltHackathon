@@ -18,8 +18,10 @@ export class DashboardRequestsComponent implements OnInit {
 
   ngOnInit() {
     this.requestService.getRequests().subscribe(data => {
-      this.requests = data;
+      Object.keys(data).forEach((key) => {
+        this.requests.push(data[key]);
+      });
+      console.log(data);
     });
   }
-
 }
