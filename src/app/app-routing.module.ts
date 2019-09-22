@@ -10,6 +10,10 @@ import {RequestsComponent} from './Components/donater/requests/requests.componen
 import { SignupComponent } from './Components/signup/signup.component';
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { DashboardHospitalsComponent } from './Components/dashboard/dashboard-hospitals/dashboard-hospitals.component';
+import { DashboardDonatersComponent } from './Components/dashboard/dashboard-donaters/dashboard-donaters.component';
+import { DashboardRequestsComponent } from './Components/dashboard/dashboard-requests/dashboard-requests.component';
 
 
 const routes: Routes = [
@@ -29,7 +33,14 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'signUp', component: SignupComponent},
   {path: 'contactUs', component: ContactUsComponent},
-  {path: 'aboutUs', component: AboutUsComponent}
+  {path: 'aboutUs', component: AboutUsComponent},
+  {path: 'dashboard', component: DashboardComponent, children: [
+    {path: '', component: DashboardDonatersComponent},
+    {path: 'hospitals', component: DashboardHospitalsComponent},
+    {path: 'donaters', component: DashboardDonatersComponent},
+    {path: 'requests', component: DashboardRequestsComponent}
+
+  ]}
 ];
 
 @NgModule({
