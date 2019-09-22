@@ -9,9 +9,9 @@
                         <option >hospital</option>
                         <option selected>donater</option>
                       </select></div>
-                     
-                      
-        
+
+
+
                   <div *ngIf="isDonator()">
                     <div class="input-group">
                         <input class="input--style-3" type="text" placeholder="Name" name="name"#name>
@@ -49,13 +49,13 @@
                         <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday"#birthday>
                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                     </div>
-                    
-                    
-                   
+
+
+
                     <div class="input-group">
                         <input class="input--style-3" type="text" placeholder="Phone" name="phone"#phone>
                     </div>
-                    
+
                     <div class="input-group">
                         <div class="rs-select2 js-select-simple select--no-search">
                             <select name="bllodType">
@@ -81,7 +81,7 @@
                         <input class="input--style-3 js-datepicker" type="text" placeholder="Address" name="Address"#Address>
                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                     </div>
-                
+
                     <div class="input-group">
                         <input class="input--style-3" type="email" placeholder="Email" name="email" #email>
                     </div>
@@ -91,14 +91,14 @@
                     <div class="input-group">
                         <input class="input--style-3" type="text" placeholder="Phone" name="phone"#phone>
                     </div>
-                    
+
                     <div class="p-t-10">
                         <button class="btn btn--pill btn--green" type="button" (click)="signHospital(name.value,Address.value,phone.value,Address.value,email.value, password.value)">Submit</button>
                     </div>
-                  </div>    
+                  </div>
 
             </div>
-                 
+
         </div>
     </div>
 </div>
