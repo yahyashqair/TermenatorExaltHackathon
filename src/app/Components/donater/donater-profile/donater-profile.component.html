@@ -3,7 +3,23 @@
     <div class="form-group col-md-6">
       <h1>
         {{donater.name | uppercase}}
+        <button *ngIf="donater.gender == 'male'" class="btn btn-outline-primary" type="button">
+            <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mars_symbol.svg/100px-Mars_symbol.svg.png"
+            alt="male"
+            height="20px"
+            width="20px"
+            >
+          </button>
+          <button *ngIf="donater.gender == 'female'" class="btn btn-outline-danger" type="button">
+              <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Venus_symbol.svg/100px-Venus_symbol.svg.png"
+              alt="female"
+              height="20px"
+              width="20px">
+            </button>
       </h1>
+
       <p>{{donater.DOB}}</p>
     </div>
   </div>

@@ -28,6 +28,7 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { DashboardHospitalsComponent } from './Components/dashboard/dashboard-hospitals/dashboard-hospitals.component';
 import { DashboardDonatersComponent } from './Components/dashboard/dashboard-donaters/dashboard-donaters.component';
 import { DashboardRequestsComponent } from './Components/dashboard/dashboard-requests/dashboard-requests.component';
+import { HomepageComponent } from './Components/homepage/homepage.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyD5RcBoU4DLPma6u7d-LsGg3XPfhfCWOkI",
@@ -56,7 +57,8 @@ const firebaseConfig = {
     DashboardComponent,
     DashboardHospitalsComponent,
     DashboardDonatersComponent,
-    DashboardRequestsComponent
+    DashboardRequestsComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

@@ -18,12 +18,26 @@
 
       <tbody>
         <tr *ngFor="let d of donaters; let i = index;">
-          <th scope="row">{{i}}</th>
+          <th scope="row">{{i+1}}</th>
           <td>{{d.name}}</td>
           <td>{{d.bloogType}}</td>
           <td>{{d.DOB}}</td>
           <td>{{d.phone}}</td>
-          <td>{{d.gender}}</td>
+          <td *ngIf="d.gender == 'male'">
+              <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mars_symbol.svg/100px-Mars_symbol.svg.png"
+              alt="male"
+              height="20px"
+              width="20px"
+              >
+          </td>
+          <td *ngIf="d.gender == 'female'">
+              <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Venus_symbol.svg/100px-Venus_symbol.svg.png"
+              alt="female"
+              height="20px"
+              width="20px">
+            </td>
           <td>{{d.leastDonationTime}}</td>
         </tr>
       </tbody>

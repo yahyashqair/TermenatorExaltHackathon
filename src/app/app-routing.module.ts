@@ -14,6 +14,7 @@ import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { DashboardHospitalsComponent } from './Components/dashboard/dashboard-hospitals/dashboard-hospitals.component';
 import { DashboardDonatersComponent } from './Components/dashboard/dashboard-donaters/dashboard-donaters.component';
 import { DashboardRequestsComponent } from './Components/dashboard/dashboard-requests/dashboard-requests.component';
+import { HomepageComponent } from './Components/homepage/homepage.component';
 
 
 const routes: Routes = [
@@ -34,12 +35,12 @@ const routes: Routes = [
   {path: 'signUp', component: SignupComponent},
   {path: 'contactUs', component: ContactUsComponent},
   {path: 'aboutUs', component: AboutUsComponent},
+  {path: 'home', component: HomepageComponent},
   {path: 'dashboard', component: DashboardComponent, children: [
     {path: '', component: DashboardDonatersComponent},
     {path: 'hospitals', component: DashboardHospitalsComponent},
     {path: 'donaters', component: DashboardDonatersComponent},
     {path: 'requests', component: DashboardRequestsComponent}
-
   ]}
 ];
 

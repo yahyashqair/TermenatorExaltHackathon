@@ -1,3 +1,24 @@
+<!-- <div class="input-group mb-3">
+    <div class="input-group-prepend" id="button-addon3">
+      <button class="btn btn-outline-primary" type="button">
+        <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mars_symbol.svg/100px-Mars_symbol.svg.png"
+        alt="male"
+        height="20px"
+        width="20px"
+        >
+      </button>
+      <button class="btn btn-outline-danger" type="button">
+        <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Venus_symbol.svg/100px-Venus_symbol.svg.png"
+        alt="female"
+        height="20px"
+        width="20px">
+      </button>
+    </div>
+</div> -->
+
+
 <div>
   <table class="table table-striped">
 
@@ -6,19 +27,19 @@
         <th scope="col">#</th>
         <th scope="col">Name</th>
         <th scope="col">Email</th>
+        <th scope="col">Country</th>
         <th scope="col">City</th>
-        <th scope="col">Area</th>
         <th scope="col">Phone</th>
       </tr>
     </thead>
 
     <tbody>
       <tr *ngFor="let h of hospitals; let i = index">
-        <th scope="row">{{i}}</th>
+        <th scope="row">{{i+1}}</th>
         <td>{{h.name}}</td>
         <td>{{h.email}}</td>
+        <td>{{h.country}}</td>
         <td>{{h.city}}</td>
-        <td>{{h.area}}</td>
         <td>{{h.phone}}</td>
       </tr>
     </tbody>
