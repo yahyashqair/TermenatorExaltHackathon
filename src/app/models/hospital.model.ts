@@ -3,7 +3,6 @@ export class HospitalModel {
   name: string;
   country: string;
   city: string;
-  area: string;
   phoneNumber: string;
   types: Storage[];
   id: number;
