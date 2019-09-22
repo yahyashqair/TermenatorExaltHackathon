@@ -14,6 +14,9 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.hospitalService.getHospital(0).subscribe(data => {
+      this.hospital = data;
+    });
   }
 
 }

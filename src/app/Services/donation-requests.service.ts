@@ -17,7 +17,7 @@ export class DonationRequestsService {
     return this.http.get<RequestModel[]>(this.requestUrl + '.json');
   }
   public addRequest(data: RequestModel) {
-    return this.http.put(this.requestUrl + '.json', data);
+    return this.http.put<RequestModel>(this.requestUrl + '.json', data);
   }
 
 }
