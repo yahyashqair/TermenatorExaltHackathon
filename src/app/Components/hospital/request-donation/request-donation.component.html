@@ -3,7 +3,7 @@
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for="bloodType">Blood Type</label>
-      <select id="bloodType" class="form-control">
+      <select id="bloodType" class="form-control" #type>
         <option selected>Choose...</option>
         <option>A</option>
         <option>B</option>
@@ -13,7 +13,7 @@
     </div>
     <div class="form-group col-md-4">
       <label for="negativePositive">'+,-'</label>
-      <select id="negativePositive" class="form-control">
+      <select id="negativePositive" class="form-control" #R>
         <option selected>Choose...</option>
         <option>Any</option>
         <option>Positive (+)</option>
@@ -22,12 +22,12 @@
     </div>
     <div class="form-group col-md-4">
       <label for="quantity">Quantity</label>
-      <input type="number" class="form-control" id="quantity">
+      <input type="number" class="form-control" id="quantity" #quantity>
     </div>
   </div>
 
   <div class="float-right">
-    <button class="btn btn-primary">Submit</button>
+    <button class="btn btn-primary" (click)="submit(type.value,R.value,quantity.value)">Submit</button>
     <button class="btn btn-danger">Cancel</button>
   </div>
 
