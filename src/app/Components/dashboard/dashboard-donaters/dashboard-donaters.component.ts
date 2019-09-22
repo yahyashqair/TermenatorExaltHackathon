@@ -16,7 +16,9 @@ export class DashboardDonatersComponent implements OnInit {
 
   ngOnInit() {
     this.donaterService.getDonaters().subscribe(data => {
-      this.donaters = data;
+      Object.keys(data).forEach((key) => {
+        this.donaters.push(data[key]);
+      });
     });
   }
 

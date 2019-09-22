@@ -1,16 +1,23 @@
-<p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
-  <h1 style="font-weight:normal">Sidebar</h1>
-  <button pButton type="button" [routerLink]="['/hospital']" (click)="visibleSidebar1 = false" label="Save" class="ui-button-success">hospital</button>
-  <br>
-  <button pButton type="button" [routerLink]="['/donater']" (click)="visibleSidebar1 = false" label="Cancel" class="ui-button-secondary">donater</button>
-  <Br>
-  <button pButton type="button" [routerLink]="['/login']" (click)="visibleSidebar1 = false" label="Cancel" class="ui-button-secondary">login</button>
-  <Br>
-  <button pButton type="button" [routerLink]="['/signup']" (click)="visibleSidebar1 = false" label="Cancel" class="ui-button-secondary">signup</button>
-  <Br>
-
-</p-sidebar>
+<!--<p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">-->
+<!--  <h1 style="font-weight:normal">Sidebar</h1>-->
+<!--  <button pButton type="button" [routerLink]="['/hospital']" (click)="visibleSidebar1 = false" label="Save" class="ui-button-success">hospital</button>-->
+<!--  <br>-->
+<!--  <button pButton type="button" [routerLink]="['/donater']" (click)="visibleSidebar1 = false" label="Cancel" class="ui-button-secondary">donater</button>-->
+<!--  <Br>-->
+<!--  <button pButton type="button" [routerLink]="['/login']" (click)="visibleSidebar1 = false" label="Cancel" class="ui-button-secondary">login</button>-->
+<!--  <Br>-->
+<!--  <button pButton type="button" [routerLink]="['/signup']" (click)="visibleSidebar1 = false" label="Cancel" class="ui-button-secondary">signup</button>-->
+<!--  <Br>-->
+<!--</p-sidebar>-->
 <nav class="navbar navbar-light bg-light">
-  <button pButton type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right">Menu</button>
+<!--  <button pButton type="button" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right">Menu</button>-->
+  <button pButton type="button" [routerLink]="['/home']" (click)="visibleSidebar1 = false" label="Cancel" class="btn btn-outline-info ui-button-secondary">Home</button>
+  <button pButton type="button" [routerLink]="['/dashboard']" (click)="visibleSidebar1 = false" label="Cancel" class="btn btn-outline-info ui-button-secondary">Dashboard</button>
+  <button pButton type="button" [routerLink]="['/hospital']" (click)="visibleSidebar1 = false" label="Save" class="btn btn-outline-info">hospital</button>
+  <button pButton type="button" [routerLink]="['/donater']" (click)="visibleSidebar1 = false" label="Cancel" class="btn btn-outline-info">donater</button>
+  <button pButton type="button" [routerLink]="['/login']" (click)="visibleSidebar1 = false" label="Cancel" class="btn btn-outline-info">login</button>
+  <button pButton type="button" [routerLink]="['/signUp']" (click)="visibleSidebar1 = false" label="Cancel" class="btn btn-outline-info">signup</button>
+  <button pButton type="button" [routerLink]="['/contactUs']" (click)="visibleSidebar1 = false" label="Cancel" class="btn btn-outline-info">Contct us</button>
+<!--  <button pButton type="button" [routerLink]="['/aboutUs']" (click)="visibleSidebar1 = false" label="Cancel" class="btn btn-outline-info ui-button-secondary">About us</button>-->
 </nav>
 <router-outlet></router-outlet>
