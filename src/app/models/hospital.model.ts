@@ -6,6 +6,7 @@ export class HospitalModel {
   area: string;
   phoneNumber: string;
   types: Storage[];
+  id: number;
 }
 
 export class Storage {

@@ -35,6 +35,7 @@ export class RequestsComponent implements OnInit {
       this.donaterService.getDonater(Number(id)).subscribe(res => {
         this.donater = res;
       });
+      console.log(this.donater);
       for (const e of data) {
         if (e.bloodType === this.donater.bloodType) {
           this.requests.push(e);
