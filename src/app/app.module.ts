@@ -32,7 +32,13 @@ import {DropdownModule} from 'primeng/dropdown';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, AccordionModule, BrowserAnimationsModule, SidebarModule, DataViewModule, DropdownModule
+    AppRoutingModule,
+    AccordionModule,
+    BrowserAnimationsModule,
+    SidebarModule,
+    DataViewModule,
+    DropdownModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
