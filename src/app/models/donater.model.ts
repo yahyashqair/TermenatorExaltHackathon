@@ -11,4 +11,5 @@ export class DonaterModel {
   id: number;
   countOfDonations: number;
   leastDonationTime: Date;
+  bloodType: string;
 }
