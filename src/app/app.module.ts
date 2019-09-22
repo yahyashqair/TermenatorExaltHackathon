@@ -18,6 +18,7 @@ import {DataViewModule} from 'primeng/dataview';
 import {DropdownModule} from 'primeng/dropdown';
 
 // import {CdkVirtualScrollViewport} from '@angular/cdk/scrolling';CdkVirtualScrollViewport
+import {HttpClientModule, HttpClient} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,13 +33,7 @@ import {DropdownModule} from 'primeng/dropdown';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AccordionModule,
-    BrowserAnimationsModule,
-    SidebarModule,
-    DataViewModule,
-    DropdownModule,
-
+    AppRoutingModule, AccordionModule, HttpClientModule, BrowserAnimationsModule, SidebarModule, DataViewModule, DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

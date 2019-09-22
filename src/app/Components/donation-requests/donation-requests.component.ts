@@ -27,7 +27,9 @@ export class DonationRequestsComponent implements OnInit {
   sortOrder: number;
 
   ngOnInit() {
-    this.requests = this.requestService.getDate();
+    this.requestService.getRequests().subscribe(data => {
+      this.requests = data;
+    });
   }
 
 

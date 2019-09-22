@@ -1,21 +1,21 @@
 <h1 class="text-center">Donation Requests</h1>
 <div *ngFor="let request of requests" class="card d-inline-block m-3  " style="width: 18rem;">
-      <div class="ui-g-12 ui-md-8 request-details" class="card-body">
-        <div class="ui-g">
-          <div class="ui-g-4">id:</div>
-          <div class="ui-g-8">{{request.id}}</div>
+  <div class="ui-g-12 ui-md-8 request-details" class="card-body">
+    <div class="ui-g">
+      <div class="ui-g-4">id:</div>
+      <div class="ui-g-8">{{request.id}}</div>
 
-          <div class="ui-g-4">msg:</div>
-          <div class="ui-g-8">{{request.msg}}</div>
+      <div class="ui-g-4">msg:</div>
+      <div class="ui-g-8">{{request.msg}}</div>
 
-          <div class="ui-g-4">bloodType:</div>
-          <div class="ui-g-8">{{request.bloodType}}</div>
+      <div class="ui-g-4">bloodType:</div>
+      <div class="ui-g-8">{{request.bloodType}}</div>
 
-          <div class="ui-g-4">value:</div>
-          <div class="ui-g-8">{{request.value}}</div>
+      <div class="ui-g-4">value:</div>
+      <div class="ui-g-8">{{request.value}}</div>
 
-          <div class="ui-g-4">hospital:</div>
-          <div class="ui-g-8">{{request.hospital|json}}</div>
-        </div>
-      </div>
-   </div>
+      <div class="ui-g-4">hospital:</div>
+      <div class="ui-g-8">{{request.hospital|json}}</div>
+    </div>
+  </div>
+</div>

@@ -16,12 +16,14 @@ export class DonaterComponent implements OnInit {
 
 
   ngOnInit() {
-    this.donaterService.donater
-      .subscribe(res => {
-        this.donater = res;
-        console.log(res + ' sent');
-      });
-    this.donaterService.getDonater();
+    //   this.donaterService.donater
+    //     .subscribe(res => {
+    //       this.donater = res;
+    //       console.log(res + ' sent');
+    //     });
+    this.donaterService.getDonater(1).subscribe(data => {
+      this.donater = data;
+    });
   }
 
 }

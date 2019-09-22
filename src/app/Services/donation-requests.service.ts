@@ -1,19 +1,17 @@
 import {Injectable} from '@angular/core';
 import {RequestModel} from '../models/request.model';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DonationRequestsService {
   private requestModels: RequestModel[] = [];
+  requestUrl = 'https://my-json-server.typicode.com/yahyashqair/demo/requests';
 
-  constructor() {
+  constructor(private http: HttpClient) {
   }
-
-  getDate(): RequestModel[] {
-    this.requestModels.push(new RequestModel(null, 'cc', 'ff', 'vv'));
-    this.requestModels.push(new RequestModel(null, 'cc2', 'ff2', 'vv2'));
-    this.requestModels.push(new RequestModel(null, 'cc3', 'ff3', 'vv3'));
-    return this.requestModels;
+  getRequests() {
+    return this.http.get<RequestModel[]>(this.requestUrl);
   }
 }
