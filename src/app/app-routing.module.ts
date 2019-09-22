@@ -7,6 +7,8 @@ import {ProfileComponent} from './Components/hospital/profile/profile.component'
 import {RequestDonationComponent} from './Components/hospital/request-donation/request-donation.component';
 import {DonationRequestsComponent} from './Components/donation-requests/donation-requests.component';
 import { SignupComponent } from './Components/signup/signup.component';
+import { ContactUsComponent } from './Components/contact-us/contact-us.component';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
 
 
 const routes: Routes = [
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path: 'donater', component: DonaterComponent},
   {path: 'login', component: LoginComponent},
   {path: 'signUp', component: SignupComponent},
+  {path: 'contactUs', component: ContactUsComponent},
+  {path: 'aboutUs', component: AboutUsComponent},
   {path: 'requests', component: DonationRequestsComponent}
 
 ];

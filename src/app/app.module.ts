@@ -20,6 +20,8 @@ import {TabMenuModule} from 'primeng/tabmenu';
 
 // import {CdkVirtualScrollViewport} from '@angular/cdk/scrolling';CdkVirtualScrollViewport
 import {HttpClientModule, HttpClient} from '@angular/common/http';
+import { ContactUsComponent } from './Components/contact-us/contact-us.component';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import {HttpClientModule, HttpClient} from '@angular/common/http';
     SignupComponent,
     ProfileComponent,
     RequestDonationComponent,
-    DonationRequestsComponent
+    DonationRequestsComponent,
+    ContactUsComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
