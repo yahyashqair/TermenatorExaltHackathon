@@ -43,7 +43,7 @@ const firebaseConfig = {
     SignupComponent,
     ProfileComponent,
     RequestDonationComponent,
-    DonationRequestsComponent,
+  
     ContactUsComponent,
     AboutUsComponent,
     RequestsComponent,

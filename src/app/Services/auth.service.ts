@@ -7,6 +7,7 @@ import { User } from  'firebase';
     providedIn:  'root'
 })
 export  class  AuthService {
+
   user:  User;
   constructor(public  afAuth:  AngularFireAuth, public  router:  Router) { this.afAuth.authState.subscribe(user => {
     if (user) {
@@ -27,6 +28,16 @@ export  class  AuthService {
       localStorage.setItem('user', null);
     }
   });
+}
+async signUp(name:string,birthday:string,gender:string,phone:string,email:string, password:string){
+  try{
+    console.log("hello");
+    await  this.afAuth.auth.createUserWithEmailAndPassword(email, password);
+  }
+  catch (e) {
+    console.log("hello");
+    alert("Error!"  +  e.message);
+}
 }
 async  login(email:  string, password:  string) {
   console.log("done");
