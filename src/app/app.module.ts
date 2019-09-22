@@ -13,7 +13,6 @@ import {AccordionModule} from 'primeng/accordion';     //accordion and accordion
 import {MenuItem} from 'primeng/api';                 //api
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SidebarModule} from 'primeng/sidebar';
-import {DonationRequestsComponent} from './Components/donation-requests/donation-requests.component';
 import {DataViewModule} from 'primeng/dataview';
 import {DropdownModule} from 'primeng/dropdown';
 import {TabMenuModule} from 'primeng/tabmenu';
@@ -34,6 +33,7 @@ const firebaseConfig = {
   messagingSenderId: "320316105652",
   appId: "1:320316105652:web:16ba3f2d7d8ad78fb6c8e1"
 };
+
 @NgModule({
   declarations: [
     AppComponent,

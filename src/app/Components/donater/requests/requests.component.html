@@ -1,1 +1,17 @@
-<p>requests works!</p>
+<h1 class="text-center">Donation Requests</h1>
+<div class="row">
+    <div *ngFor="let request of requests" class="col-sm-4">
+      <div class="card border-success">
+        <div class="card-header border-success">
+            Hospital: {{request.hospital}}
+        </div>
+        <div class="card-body border-success">
+          <h5 class="card-title">Blood Type: {{request.bloodType}}</h5>
+          <p class="card-text">Quantity: {{request.quantity}}</p>
+        </div>
+        <div class="card-footer border-success">
+            ID: {{request.id}}
+        </div>
+      </div>
+    </div>
+  </div>
