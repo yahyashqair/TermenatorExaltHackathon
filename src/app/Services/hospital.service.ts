@@ -19,7 +19,7 @@ export class HospitalService {
   }
 
   public getHospitals() {
-    return this.http.get<HospitalModel>(this.getHospitalurl + '.json');
+    return this.http.get<HospitalModel[]>(this.getHospitalurl + '.json');
   }
 
 

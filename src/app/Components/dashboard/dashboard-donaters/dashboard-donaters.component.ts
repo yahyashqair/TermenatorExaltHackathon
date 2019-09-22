@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {DonaterModel} from '../../../models/donater.model';
+import {DonaterService} from '../../../Services/donater-service.service';
 
 @Component({
   selector: 'app-dashboard-donaters',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardDonatersComponent implements OnInit {
 
-  constructor() { }
+  donaters: DonaterModel[]=[];
+
+  constructor(private donaterService: DonaterService) {
+  }
 
   ngOnInit() {
+    this.donaterService.getDonaters().subscribe(data => {
+      this.donaters = data;
+    });
   }
 
 }

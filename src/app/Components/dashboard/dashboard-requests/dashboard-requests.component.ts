@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {DonaterModel} from '../../../models/donater.model';
+import {DonaterService} from '../../../Services/donater-service.service';
+import {RequestModel} from '../../../models/request.model';
+import {DonationRequestsService} from '../../../Services/donation-requests.service';
 
 @Component({
   selector: 'app-dashboard-requests',
@@ -7,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardRequestsComponent implements OnInit {
 
-  constructor() { }
+  requests: RequestModel[] = [];
+
+  constructor(private requestService: DonationRequestsService) {
+  }
 
   ngOnInit() {
+    this.requestService.getRequests().subscribe(data => {
+      this.requests = data;
+    });
   }
 
 }

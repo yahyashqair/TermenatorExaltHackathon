@@ -21,7 +21,7 @@ export class DonaterService {
   }
 
   public getDonaters() {
-    return this.http.get<DonaterModel>(this.getUser + '.json');
+    return this.http.get<DonaterModel[]>(this.getUser + '.json');
   }
 
   public setDonater(data: DonaterModel) {
