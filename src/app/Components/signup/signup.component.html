@@ -1,4 +1,4 @@
-<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+<div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins" style="background: #DADADA">
     <div class="wrapper wrapper--w780">
         <div class="card card-3">
             <div class="card-heading"></div>
@@ -9,17 +9,11 @@
                         <option >hospital</option>
                         <option selected>donater</option>
                       </select></div>
-<<<<<<< HEAD
                      
                       <br>
                       <br> <br>
                       
         
-=======
-
-
-
->>>>>>> 75078803f8cd56828c80bd0654cd9886ba9754d9
                   <div *ngIf="isDonator()">
                     <div class="input-group">
                         <input class="input--style-3" type="text" placeholder="Name" name="name"#name>
@@ -57,19 +51,14 @@
                         <input class="input--style-3 js-datepicker" type="text" placeholder="Birthdate" name="birthday"#birthday>
                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                     </div>
-
-
-
+                    
+                    
+                   
                     <div class="input-group">
                         <input class="input--style-3" type="text" placeholder="Phone" name="phone"#phone>
                     </div>
-<<<<<<< HEAD
                     
                     <div class="input-group"style=" border-bottom:none;">
-=======
-
-                    <div class="input-group">
->>>>>>> 75078803f8cd56828c80bd0654cd9886ba9754d9
                         <div class="rs-select2 js-select-simple select--no-search">
                             <select class="form-control form-control-lg" name="bllodType">
                                 <option disabled="disabled" selected="selected"#Address>Address</option>
@@ -93,7 +82,7 @@
                         <input class="input--style-3 js-datepicker" type="text" placeholder="Address" name="Address"#Address>
                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                     </div>
-
+                
                     <div class="input-group">
                         <input class="input--style-3" type="email" placeholder="Email" name="email" #email>
                     </div>
@@ -103,14 +92,14 @@
                     <div class="input-group">
                         <input class="input--style-3" type="text" placeholder="Phone" name="phone"#phone>
                     </div>
-
+                    
                     <div class="p-t-10">
                         <button class="btn btn--pill btn--green" type="button" (click)="signHospital(name.value,Address.value,phone.value,Address.value,email.value, password.value)">Submit</button>
                     </div>
-                  </div>
+                  </div>    
 
             </div>
-
+                 
         </div>
     </div>
 </div>
