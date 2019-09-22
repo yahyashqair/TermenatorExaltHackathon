@@ -28,6 +28,7 @@ export class HospitalService {
   }
 
   public saveHospital(data: HospitalModel) {
+    console.log(data);
     return this.http.post(this.getHospitalurl + '.json', data);
   }
 
