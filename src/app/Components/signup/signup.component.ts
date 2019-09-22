@@ -19,13 +19,25 @@ export class SignupComponent implements OnInit {
   }
 
   sign(name: string, birthday: string, gender: string, phone: string, email: string, password: string, type: string) {
+    console.log(type);
     this.authService.signUp(email, password);
-    if (type == 'hospital') {
+    if (type === 'hospital') {
+      console.log('idiot');
       let hospital : HospitalModel = new HospitalModel();
-      hospital.
+      hospital.phoneNumber=phone;
+      hospital.name=name;
+      hospital.email=email;
+      hospital.city='ramallah';
       this.hospitalService.saveHospital(hospital);
-    }else{
-
+    }if (type === 'donater') {
+      let donator : DonaterModel = new DonaterModel();
+      donator.phone=phone;
+      donator.city='ramallah';
+      donator.name=name;
+      donator.gender=gender;
+      donator.bloodType='AB';
+      this.donaterService.saveDonater(donator);
+      console.log('notidiot');
     }
 
   }

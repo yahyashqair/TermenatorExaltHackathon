@@ -15,11 +15,11 @@ export class HospitalService {
 
 
   public getHospital(id: number) {
-    return this.http.get<DonaterModel>(this.getHospitalurl + id + '.json');
+    return this.http.get<HospitalModel>(this.getHospitalurl + id + '.json');
   }
 
   public getHospitals() {
-    return this.http.get<DonaterModel>(this.getHospitalurl + '.json');
+    return this.http.get<HospitalModel>(this.getHospitalurl + '.json');
   }
 
 
@@ -28,7 +28,8 @@ export class HospitalService {
   }
 
   public saveHospital(data: HospitalModel) {
-    return this.http.post(this.getHospitalurl + '.json', data);
+    return this.http.post<HospitalModel>(this.getHospitalurl + '.json', data);
+    console.log(data);
   }
 
 }
