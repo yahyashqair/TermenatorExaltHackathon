@@ -20,13 +20,10 @@ import {TabMenuModule} from 'primeng/tabmenu';
 
 // import {CdkVirtualScrollViewport} from '@angular/cdk/scrolling';CdkVirtualScrollViewport
 import {HttpClientModule, HttpClient} from '@angular/common/http';
-<<<<<<< HEAD
 import { ContactUsComponent } from './Components/contact-us/contact-us.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
-=======
 import { RequestsComponent } from './Components/donater/requests/requests.component';
 import { DonaterProfileComponent } from './Components/donater/donater-profile/donater-profile.component';
->>>>>>> 98228774cdf8cc2a941baf410ae9ac489d2dc2ad
 
 @NgModule({
   declarations: [
@@ -38,13 +35,10 @@ import { DonaterProfileComponent } from './Components/donater/donater-profile/do
     ProfileComponent,
     RequestDonationComponent,
     DonationRequestsComponent,
-<<<<<<< HEAD
     ContactUsComponent,
-    AboutUsComponent
-=======
+    AboutUsComponent,
     RequestsComponent,
     DonaterProfileComponent
->>>>>>> 98228774cdf8cc2a941baf410ae9ac489d2dc2ad
   ],
   imports: [
     BrowserModule,
