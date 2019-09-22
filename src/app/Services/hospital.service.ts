@@ -26,4 +26,9 @@ export class HospitalService {
   public setHospital(data: HospitalModel) {
     return this.http.put(this.getHospitalurl + data.id + '.json', data);
   }
+
+  public saveHospital(data: HospitalModel) {
+    return this.http.post(this.getHospitalurl + '.json', data);
+  }
+
 }

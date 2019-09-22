@@ -27,4 +27,8 @@ export class DonaterService {
   public setDonater(data: DonaterModel) {
     return this.http.put(this.getUser + data.id + '.json', data);
   }
+  public saveDonater(data: DonaterModel) {
+    return this.http.post(this.getUser + '.json', data);
+  }
+
 }
