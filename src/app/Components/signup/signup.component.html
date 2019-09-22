@@ -3,13 +3,15 @@
         <div class="card card-3">
             <div class="card-heading"></div>
             <div class="card-body">
-                <h2 class="title">Registration Info </h2>
-                <div class="input-group">
+                <h2 class="title"style="color:#CE9898;">Registration Info </h2>
+                <div class="input-group" style=" border-bottom:none;">
                      <div> <select class="form-control form-control-lg"name="type" #type (change)="changeVar(type.value)"style="backGround:white;color:black;">
                         <option >hospital</option>
                         <option selected>donater</option>
                       </select></div>
                      
+                      <br>
+                      <br> <br>
                       
         
                   <div *ngIf="isDonator()">
@@ -22,7 +24,7 @@
                     <div class="input-group">
                         <input class="input--style-3" type="password" placeholder="password" name="password" #password>
                     </div>
-                    <div class="input-group">
+                    <div class="input-group" style=" border-bottom:none;">
                         <div class="rs-select2 js-select-simple select--no-search">
                             <select class="form-control form-control-lg"name="gender">
                                 <option disabled="disabled" selected="selected"#gender>Gender</option>
@@ -33,7 +35,7 @@
                             <div class="select-dropdown"></div>
                         </div>
                     </div>
-                    <div class="input-group">
+                    <div class="input-group"style=" border-bottom:none;">
                         <div class="rs-select2 js-select-simple select--no-search">
                             <select class="form-control form-control-lg"name="bllodType">
                                 <option disabled="disabled" selected="selected"#bloodType>bloodType</option>
@@ -56,7 +58,7 @@
                         <input class="input--style-3" type="text" placeholder="Phone" name="phone"#phone>
                     </div>
                     
-                    <div class="input-group">
+                    <div class="input-group"style=" border-bottom:none;">
                         <div class="rs-select2 js-select-simple select--no-search">
                             <select class="form-control form-control-lg" name="bllodType">
                                 <option disabled="disabled" selected="selected"#Address>Address</option>
@@ -65,11 +67,10 @@
                                 <option>Rawabi</option>
                                 <option>Alquds</option>
                             </select>
-                            <div class="select-dropdown"></div>
                         </div>
                     </div>
-                    <div >
-                        <button class="btn btn--pill btn--green" type="button" (click)="signDonator(name.value,birthday.value,gender.value,bloodType.value,phone.value,Address.value,email.value, password.value)">Submit</button>
+                    <div style=" border-bottom:none;">
+                        <button class="btn btn--pill btn--green"  type="button" (click)="signDonator(name.value,birthday.value,gender.value,bloodType.value,phone.value,Address.value,email.value, password.value)">Submit</button>
                     </div>
                   </div>
 
