@@ -19,6 +19,7 @@ import {DropdownModule} from 'primeng/dropdown';
 import {TabMenuModule} from 'primeng/tabmenu';
 
 // import {CdkVirtualScrollViewport} from '@angular/cdk/scrolling';CdkVirtualScrollViewport
+import {HttpClientModule, HttpClient} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -33,14 +34,7 @@ import {TabMenuModule} from 'primeng/tabmenu';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AccordionModule,
-    BrowserAnimationsModule,
-    SidebarModule,
-    DataViewModule,
-    DropdownModule,
-    TabMenuModule,
-
+    AppRoutingModule, AccordionModule, HttpClientModule, BrowserAnimationsModule, SidebarModule, DataViewModule, DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

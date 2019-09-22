@@ -1,6 +1,7 @@
 import {Injectable, OnInit} from '@angular/core';
 import {DonaterModel} from '../models/donater.model';
 import {Observable, Subject} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -8,24 +9,19 @@ import {Observable, Subject} from 'rxjs';
 export class DonaterService {
   donaterTemp: DonaterModel = new DonaterModel();
   donater: Subject<DonaterModel> = new Subject<DonaterModel>();
+  getUser = 'https://my-json-server.typicode.com/yahyashqair/demo/donaters/';
+  getUsers = 'https://my-json-server.typicode.com/yahyashqair/demo/donaters/';
 
-  constructor() {
+  constructor(private http: HttpClient) {
 
   }
 
-  public getDonater() {
-    console.log('Hello from service');
-    this.donaterTemp = new DonaterModel();
-    this.donaterTemp.name = 'yahya';
-    this.donaterTemp.DOB = new Date(11, 22, 22);
-    this.donaterTemp.name = 'yahya';
-    console.log(this.donaterTemp);
-    // setTimeout(() => {
+  public getDonater(id: number) {
+    return this.http.get<DonaterModel>(this.getUser +  id);
+  }
 
-    this.donater.next(this.donaterTemp);
-    // }, 5000);
-    console.log(this.donater);
-    // return this.donater;
+  public getDonaters() {
+   return this.http.get<DonaterModel>(this.getUser);
   }
 
 
