@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cb5e221-c554-43fa-ba31-42d00c7ef686" name="Default Changelist" comment="add donation request Component , fix unvalid route">
+    <list default="true" id="1cb5e221-c554-43fa-ba31-42d00c7ef686" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Components/donation-requests/donation-requests.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/donation-requests/donation-requests.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Components/donation-requests/donation-requests.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Components/donation-requests/donation-requests.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -106,7 +106,7 @@
       <workItem from="1569081936184" duration="7321000" />
       <workItem from="1569089291493" duration="302000" />
       <workItem from="1569089759349" duration="310000" />
-      <workItem from="1569090760041" duration="2629000" />
+      <workItem from="1569090760041" duration="4707000" />
     </task>
     <task id="LOCAL-00001" summary="add side bar">
       <created>1569082140138</created>
@@ -178,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569092288052</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add donation request Component , fix unvalid route">
+      <created>1569093591728</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1569093591728</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

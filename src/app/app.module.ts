@@ -16,7 +16,7 @@ import {SidebarModule} from 'primeng/sidebar';
 import {DonationRequestsComponent} from './Components/donation-requests/donation-requests.component';
 import {DataViewModule} from 'primeng/dataview';
 import {DropdownModule} from 'primeng/dropdown';
-import {CdkVirtualScrollViewport} from '@angular/cdk/scrolling';
+// import {CdkVirtualScrollViewport} from '@angular/cdk/scrolling';CdkVirtualScrollViewport
 
 @NgModule({
   declarations: [
@@ -31,7 +31,7 @@ import {CdkVirtualScrollViewport} from '@angular/cdk/scrolling';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, AccordionModule, BrowserAnimationsModule, CdkVirtualScrollViewport, SidebarModule, DataViewModule, DropdownModule
+    AppRoutingModule, AccordionModule, BrowserAnimationsModule, SidebarModule, DataViewModule, DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
