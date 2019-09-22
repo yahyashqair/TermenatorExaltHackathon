@@ -16,6 +16,7 @@ import {SidebarModule} from 'primeng/sidebar';
 import {DonationRequestsComponent} from './Components/donation-requests/donation-requests.component';
 import {DataViewModule} from 'primeng/dataview';
 import {DropdownModule} from 'primeng/dropdown';
+import {TabMenuModule} from 'primeng/tabmenu';
 
 // import {CdkVirtualScrollViewport} from '@angular/cdk/scrolling';CdkVirtualScrollViewport
 
@@ -38,6 +39,7 @@ import {DropdownModule} from 'primeng/dropdown';
     SidebarModule,
     DataViewModule,
     DropdownModule,
+    TabMenuModule,
 
   ],
   providers: [],
