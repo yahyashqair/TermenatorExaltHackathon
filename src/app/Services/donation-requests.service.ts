@@ -5,7 +5,7 @@ import {RequestModel} from '../models/request.model';
   providedIn: 'root'
 })
 export class DonationRequestsService {
-  private requestModels: RequestModel[];
+  private requestModels: RequestModel[] = [];
 
   constructor() {
   }
