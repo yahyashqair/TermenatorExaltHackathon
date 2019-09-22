@@ -5,7 +5,6 @@ export class DonaterModel {
   gender: string;
   country: string;
   city: string;
-  area: string;
   phone: string;
   IDnumber: number;
   id: number;
