@@ -9,20 +9,22 @@ import {HttpClient} from '@angular/common/http';
 export class DonaterService {
   donaterTemp: DonaterModel = new DonaterModel();
   donater: Subject<DonaterModel> = new Subject<DonaterModel>();
-  getUser = 'https://my-json-server.typicode.com/yahyashqair/demo/donaters/';
-  getUsers = 'https://my-json-server.typicode.com/yahyashqair/demo/donaters/';
+  getUser = 'https://termenatorexalthackathon.firebaseio.com/donaters/';
+  getUsers = 'https://termenatorexalthackathon.firebaseio.com/donaters/';
 
   constructor(private http: HttpClient) {
 
   }
 
   public getDonater(id: number) {
-    return this.http.get<DonaterModel>(this.getUser +  id);
+    return this.http.get<DonaterModel>(this.getUser + id + '.json');
   }
 
   public getDonaters() {
-   return this.http.get<DonaterModel>(this.getUser);
+    return this.http.get<DonaterModel>(this.getUser + '.json');
   }
 
-
+  public setDonater(data: DonaterModel) {
+    return this.http.put(this.getUser + data.id + '.json', data);
+  }
 }
