@@ -20,8 +20,8 @@ const routes: Routes = [
   },
   {
     path: 'donater', component: DonaterComponent, children: [
-      {path: '', component: DonaterProfileComponent},
-      {path: 'requests', component: RequestsComponent}
+      {path: '', component: RequestsComponent},
+      {path: 'profile', component: DonaterProfileComponent}
 
     ]
   },
