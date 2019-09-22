@@ -5,14 +5,12 @@
             <div class="card-body">
                 <h2 class="title">Registration Info </h2>
                 <div class="input-group">
-                     <div class="rs-select2 js-select-simple select--no-search">
-                      <select name="type" #type (change)="changeVar(type.value)">
+                     <div> <select class="form-control form-control-lg"name="type" #type (change)="changeVar(type.value)"style="backGround:red;color:white;">
                         <option >hospital</option>
                         <option selected>donater</option>
-                      </select>
-                      <div class="select-dropdown"></div>
-                    </div>
-                  </div> 
+                      </select></div>
+                     
+                      
         
                   <div *ngIf="isDonator()">
                     <div class="input-group">
